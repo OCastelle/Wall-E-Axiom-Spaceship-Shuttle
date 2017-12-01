@@ -1,25 +1,22 @@
 {
-
-  "name": "Test",
-
-  "description": "Test",
-
-  "version": "0.0.0",
-
+  "name": "wall-e",
+  "version": "1.0.0",
+  "description": "Discord Boot",
   "main": "index2.js",
-
   "scripts": {
-
-     "start": "index2.js"
-
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-
+  "author": "Cyril",
+  "license": "ISC",
   "dependencies": {
-
-    "discord.js": "11.1.0",
-
-    "request": "2.81.0"
-
+    "convert-atom-snippets-to-vscode": "^1.0.2",
+    "discord.js": "^11.2.1",
+    "final-fs": "^1.6.1",
+    "fs": "0.0.1-security",
+    "heroku": "^0.2.0",
+    "node-fs": "^0.1.7",
+    "profanities": "^2.5.2",
+    "quick-db": "^1.0.5",
+    "quick.db": "^3.0.2"
   }
-
 }
