@@ -7,6 +7,8 @@ bot.on('message', message =>{
   var msg = message.content.toUpperCase();
   var prefix = '>'
 
+bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
+
   for (x = 0; x < profanities.length; x++) {
         if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
              message.channel.send('HEY! That is inappropriate, Please Do Not Attempt to type that again')
