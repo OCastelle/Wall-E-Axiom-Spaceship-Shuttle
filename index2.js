@@ -54,7 +54,7 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
               title: ">Input & Output Commands",
               description: "Link in Bio",
               url: "https://www.youtube.com/channel/UCcgVECVN4OKV6DH1jLkqmcA",
-              color: 0x85929e,
+              color: 0x4d4e85,
               fields:[
                 {
                     name: "Command #1-The-Ping-Pong-Command",
