@@ -52,14 +52,31 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
   if (msg === prefix + 'HELP') {   
       message.channel.send({embed: {
               title: ">Input & Output Commands",
-              description: "Command #1: -Input: Hi! -Output: a Pleasant Greeting",
-              color: 0x85929e
-    }})
-
-      message.channel.send({embed:{
-              title: ">Input & Output Commands",
-              description: "Command #2: -Input: !Skip -Output: skips Currnet Song",
-              color: 0x34495e
+              description: "Link in Bio",
+              url: "https://www.youtube.com/channel/UCcgVECVN4OKV6DH1jLkqmcA",
+              color: 0x85929e,
+              fields:[
+                {
+                    name: "Command #1-The-Ping-Pong-Command",
+                    value: "-Input: >PING -Output: PONG!",
+                    inline: true
+                },
+                {
+                    name: "Command #2-The-Skip-Command",
+                    value: "-Input: !SKIP - Output: Skips current song.",
+                    inline: true
+                },
+                {
+                    name: "Command #3-Greeting-Command",
+                    value: "-Input: Hi! -Output: a please greeting.",
+                    inline: false
+                },
+              ],
+              timestamp: new Date(),
+              footer: {
+                  text: "Thank you for reading the commands",
+                  icon_url: "http://il2.picdn.net/shutterstock/videos/400882/thumb/1.jpg"
+              } 
     }})
 }
 
