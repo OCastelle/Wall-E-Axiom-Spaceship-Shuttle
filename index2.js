@@ -11,7 +11,7 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 
   for (x = 0; x < profanities.length; x++) {
         if (message.content.toUpperCase() == profanities[x].toUpperCase()) {
-             message.channel.send('HEY! That is inappropriate, Please Do Not Attempt to type that again!')
+             message.channel.send('HEY! That is inappropriate, Please Do Not Attempt to type that again')
              message.delete();
              return;
         }
@@ -25,8 +25,24 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
   }
 
   if (msg === prefix + 'PING') {
-      message.channel.send('PONG!')
-  }
+      message.channel.send({embed:{
+            title: "Ping!",
+            description: "PONG!",
+            color: 0xa93226
+      }})
+
+      message.channel.send({embed: {
+              title: ">Input & Output Commands",
+              description: "Command #1: -Input: Hi! -Output: a Pleasant Greeting",
+              color: 0x85929e
+    }})
+
+      message.channel.send({embed:{
+              title: ">Input & Output Commands",
+              description: "Command #2: -Input: !Skip -Output: skips Currnet Song",
+              color: 0x34495e
+      }})
+}
 
   if (msg.includes('SHIT')) {
     message.delete();
@@ -36,6 +52,15 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
   if(msg.includes('NIGGER')) {
     message.delete();
     message.author.send('The WORD **NIGGER** is racist, Do not attempt to type it again!')
+  }
+
+  if(msg.includes('!SKIP')) {
+    message.channel.send({embed: {
+            title: "Disliked Song",
+            description: "Next Song on PlayList",
+            color: 0xd35400
+
+    }})
   }
 
   if (msg.includes('FUCK')) {
