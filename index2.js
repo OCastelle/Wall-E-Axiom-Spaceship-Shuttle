@@ -1,11 +1,28 @@
 var Discord = require('discord.js');
 var bot = new Discord.Client();
 var profanities = require('profanities');
+const fs = require('fs');
+const db = require('quick.db');
 
 bot.on('message', message =>{
   var sender = message.author;
   var msg = message.content.toUpperCase();
   var prefix = '>'
+
+  db.updateValue(message.author.id + message.guild.id, 1).then(i => {
+     
+    let messages;
+    if (i.value == 25) messages = 25;
+    else if (i.value == 50) messages = 50;
+    else if (i.value == 100) messages = 100; 
+
+    if (!isNaN(messages)) { // If messages IS STILL empty, run this.
+      db.updateValue(`userLevel_${message.author.id + message.guild.id}`, 1).then(o => { // This returns the updated object of userLevel_ID. 
+          message.channel.send(`You sent ${messages} messages, therefore you leveled up! You are now level ${o.value}`) // Send their updated level to the channel.
+      })
+     }
+
+  })
 
 bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 
@@ -70,3 +87,4 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 });
 
 bot.login('MzgyODQ1ODIyNTAyNTY3OTM2.DPz17Q.SjfRDOFg6uWd_IpfgCnQVvipRyA')
+
