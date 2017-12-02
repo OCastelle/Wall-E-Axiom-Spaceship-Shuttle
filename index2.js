@@ -47,7 +47,9 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
             description: "PONG!",
             color: 0xa93226
       }})
+    }
 
+  if (msg === prefix + 'HELP') {   
       message.channel.send({embed: {
               title: ">Input & Output Commands",
               description: "Command #1: -Input: Hi! -Output: a Pleasant Greeting",
@@ -58,7 +60,7 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
               title: ">Input & Output Commands",
               description: "Command #2: -Input: !Skip -Output: skips Currnet Song",
               color: 0x34495e
-      }})
+    }})
 }
 
   if (msg.includes('SHIT')) {
