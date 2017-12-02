@@ -51,23 +51,23 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 
   if (msg === prefix + 'HELP') {   
       message.channel.send({embed: {
-              title: ">Input & Output Commands",
-              description: "Link in Bio",
+              title: "->Input & Output Commands",
+              description: "⬆Link in Bio",
               url: "https://www.youtube.com/channel/UCcgVECVN4OKV6DH1jLkqmcA",
-              color: 0x4d4e85,
+              color: 0x85929e,
               fields:[
                 {
-                    name: "Command #1-The-Ping-Pong-Command",
+                    name: " ➡Command #1-The-Ping-Pong-Command",
                     value: "-Input: >PING -Output: PONG!",
                     inline: true
                 },
                 {
-                    name: "Command #2-The-Skip-Command",
+                    name: " ➡Command #2-The-Skip-Command",
                     value: "-Input: !SKIP - Output: Skips current song.",
                     inline: true
                 },
                 {
-                    name: "Command #3-Greeting-Command",
+                    name: " ➡Command #3-Greeting-Command",
                     value: "-Input: Hi! -Output: a please greeting.",
                     inline: false
                 },
@@ -106,4 +106,3 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 });
 
 bot.login('MzgyODQ1ODIyNTAyNTY3OTM2.DPz17Q.SjfRDOFg6uWd_IpfgCnQVvipRyA')
-
