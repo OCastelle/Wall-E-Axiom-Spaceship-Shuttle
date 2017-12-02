@@ -12,9 +12,9 @@ bot.on('message', message =>{
   db.updateValue(message.author.id + message.guild.id, 1).then(i => {
      
     let messages;
-    if (i.value == 25) messages = 25;
-    else if (i.value == 50) messages = 50;
-    else if (i.value == 100) messages = 100; 
+    if (i.value == 25) messages = 5;
+    else if (i.value == 50) messages = 10;
+    else if (i.value == 100) messages = 15; 
 
     if (!isNaN(messages)) { // If messages IS STILL empty, run this.
       db.updateValue(`userLevel_${message.author.id + message.guild.id}`, 1).then(o => { // This returns the updated object of userLevel_ID. 
