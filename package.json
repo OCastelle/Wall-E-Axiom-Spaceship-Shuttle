@@ -9,14 +9,19 @@
   "author": "Cyril",
   "license": "ISC",
   "dependencies": {
+    "color-picker": "0.0.1",
     "convert-atom-snippets-to-vscode": "^1.0.2",
     "discord.js": "^11.2.1",
+    "embed": "0.0.1",
+    "embeds": "^2.11.5",
+    "express": "^4.16.2",
     "final-fs": "^1.6.1",
     "fs": "0.0.1-security",
     "heroku": "^0.2.0",
     "node-fs": "^0.1.7",
     "profanities": "^2.5.2",
     "quick-db": "^1.0.5",
-    "quick.db": "^3.0.2"
+    "quick.db": "^3.0.3",
+    "weather-js": "^2.0.0"
   }
 }
