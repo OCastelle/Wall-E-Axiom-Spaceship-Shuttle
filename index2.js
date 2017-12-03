@@ -23,7 +23,6 @@ bot.on('message', message =>{
      }
 
   })
-
 bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 
   for (x = 0; x < profanities.length; x++) {
@@ -68,7 +67,7 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
                 },
                 {
                     name: " ➡Command #3-Greeting-Command",
-                    value: "-Input: Hi! -Output: a please greeting.",
+                    value: "-Input: Hi! -Output: a pleasant greeting.",
                     inline: false
                 },
               ],
