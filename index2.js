@@ -40,8 +40,11 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
   if (message.author.equals(bot.user)) return;
 
   if (message.content == "Hi!"){
-      message.channel.sendMessage("Greetings, From The Axiom Space Shuttle!");
-
+      message.channel.send({embed:{
+            title: "Hello!",
+            description: "Greetings, From The Axiom Space Shuttle!",
+            color: 0x657fdf
+      }})
   }
 
   if (msg === prefix + 'PING') {
@@ -148,3 +151,4 @@ bot.user.setPresence({ game: { name: "!+=soundblock=+!" , type: 0 } });
 });
 
 bot.login('MzgyODQ1ODIyNTAyNTY3OTM2.DPz17Q.SjfRDOFg6uWd_IpfgCnQVvipRyA')
+
